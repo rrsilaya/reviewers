@@ -1,0 +1,140 @@
+\documentclass[9pt,twocolumn]{article}
+
+\usepackage[margin=.5in]{geometry}
+\usepackage{sectsty}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{listings}
+\usepackage[none]{hyphenat}
+
+\title{
+  \textbf{CMSC 128: Introduction to Software Engineering} \\
+  First Examination Reviewer
+}
+\date{}
+\sectionfont{\centering\fontsize{12}{14}\selectfont}
+\subsectionfont{\fontsize{10}{10}\selectfont}
+\captionsetup{justification=centering}
+\pagenumbering{gobble}
+\lstset{
+  basicstyle={\ttfamily},
+  breaklines=true,
+  showstringspaces=false,
+  breakatwhitespace=true
+}
+
+\begin{document}
+\maketitle
+
+\section*{Introduction}
+  \subsection*{Program}
+  A set of instructions written to perform a certain task. May or may not have an "interface". \textbf{Example:} Parse the contents of a text file and format its contents appropriately.
+
+  \subsection*{Application}
+  A software intended to run on a specific environment and perform a task.
+
+  \subsection*{Software}
+  \begin{itemize}
+    \item Composed of many programs
+    \item Can perform a number of tasks
+    \item Documented
+  \end{itemize}
+
+\section*{Software Engineering}
+  Software engineering is a term that was introduced by \textbf{Friedrich Bauer} in October 1968 NATO Software Engineering conference in Garmisch, Germany. It is the \emph{creative activity of understanding the business problem, coming up wih an idea for solution, and desining the 'blueprints' of the solution}.
+
+  Software engineering is the aplication of the disciplined approach for the development and maintenance of computer software. A software engineer must understand the customer's business needs and design software to help meet them. Each customer is unique.
+
+  Software engineers must possess:
+  \begin{enumerate}
+    \item The ability to quickly learn new and diverse disciplines and business processes.
+    \item The ability to communicate with domain experts, extract an abstract model of the problem, and formulate a solution that makes sense in the context of customer's business.
+    \item The ability to design a software system that will realize the proposed solution and gracefully evolve with the evolving business needs for many years in the future.
+  \end{enumerate}
+
+\section*{History of Software Engineering}
+  \begin{description}
+    \item[John Tukey] first coined software engineering in 1958.
+    \item[Alan Turing] first established the theoretical concept of a computer in the 1930s.
+    \item[Muhammad Al-Khawarezmi] is a 9th century mathematician who introduced the \textbf{concept of algorithm}.
+    \item[Ada Lovelace] is the first computer programmer who made an algorithm concrete when she first programmed it.
+    \item[Alan Kay] pioneered work on window-based graphical user interface. He is also known for coining the term \textbf{object-oriented programming} in 1966.
+    \item[Ali Mili] contributed to the \textbf{formalization of software fault tolerance}, now a major concern for developing secure software systems.
+    \item[Barry Boehm] contributed to the area of software engineering economics and software metrics. He has also introduced the \textbf{spiral model} for software development.
+    \item[Bill Joy] contributed to the development of the \textbf{Unix operating system} and the \textbf{Java} programming language.
+    \item[Brian Kernighan and Dennis Ritchie] were instrumetal in developing the \textbf{Unix operating system} and the \textbf{C programming language}.
+    \item[C.A.R. Hoare] introduced the concepts of \textbf{assertions and program proof of correctness}, designed and analyzed well-known algorithms, and developed communicating sequential processes, a formal language for the specification of concurrent processes.
+    \item[David Parnas] introduced the concepts of \textbf{information hiding}, software interfaces, and software modularity. He has also contributed to software engineering education and the \textbf{ethical responsibilities of a software engineer}.
+    \item[Donald Knuth] is known fo the design of many well-known computer algorithms and the use of rigorous mathematical techniques for the formal analysis of the complexity of algorithms.
+    \item[Edsger Dijkstra] introduced the concept of \textbf{structured programming} and carried out in-depth studies of the problems of concurrency and synchronization needed in complex distributed systems.
+    \item[Gamma 4] with Erich Gamma, Richard Helm, Ralph Johnsonn, and John Vlissides introduced the concept of \textbf{object-oriented design patters} to facilitate software design reuse.
+    \item[Fred Brooks] contributed to the development of the \textbf{OS/360 operating system software}. He is also known for introducing mythical man-month in software project management.
+    \item[Friedrich Bauer] introduced the use of \textbf{stacks} for expression evaluation in programming language compilers, contributed to the development of the \textbf{ALGOL} and coined the term \emph{software engineering} in the NATO conference held in Germany in 1968.
+    \item[Grace Hopper] contributed extensively to the \textbf{first compiler} and the \textbf{COBOL programming language} in the 1950s.
+    \item[Grady Booch] is known for his method for \textbf{object-oriented analysis} and design and his co-development of the \textbf{Unified Modeling Language (UML)}.
+    \item[John Backus] is well known for the invention of \textbf{FORTRAN}, \textbf{compiler optimization}, and the \textbf{Backus-Naur Form} for the formal description of programming language syntax.
+    \item[Michael Fagan] contibuted extensively to the area of \textbf{software inspection}.
+    \item[Niklaus Wirth] introduced the \textbf{Pascal programming language} and other languages, and contributed to the idea of \textbf{decomposition} and \textbf{stepwise refinement}.
+    \item[Ole-Johan Dahl and Kristen Nygaard] introduced the \textbf{Simula language} which was the first object-oriented programming language.
+    \item[Peter Naur] is known for his contributions to the creation of the \textbf{ALGOL programming language} and the introduction of formal syntax description language.
+    \item[Tom DeMarco and Edward Yourdon] introduced the structured analysis and design approach for specifying and designing software systems.
+    \item[Watts Humphrey] is known for his work on the \textbf{capability maturity model} developed by the software engineering institute and the personal software process.
+    \item[Winston Royce] contributed the well-known model for the management of large software systems whih was later named the \textbf{Waterfall model}.
+  \end{description}
+
+\section*{Software Development Team}
+  \subsection*{Project Manager (PM)}
+  \begin{itemize}
+    \item Setup administrative direction for the project
+    \item Lays out the initial scheduling and project goals
+    \item Listens to feedback from end users and Business Analyst
+    \item Setup project meetings and resources
+    \item Determines project scope
+    \item Responsible for documents such as SRS
+  \end{itemize}
+
+  \subsection*{Team Leader (TL)}
+  \begin{itemize}
+    \item Leads the developer in creating a module, software or application.
+    \item Coordinates in other team leaders and with the project manager.
+    \item Key point personnel in the managing the pacing of the team in terms of development.
+    \item Suggests and/or decides on the implementation to be used as well as the choice of technology.
+  \end{itemize}
+
+  \subsection*{Business Analyst}
+  \begin{itemize}
+    \item Examines the existing or ideal organiation and design of systems including businesses, departments, and organizations.
+    \item May conduct a gap analysis
+    \item Gives advices on areas that might be optimized or improved
+    \item Begins to work out a project strategy
+  \end{itemize}
+
+  \subsection*{Developer}
+  \begin{itemize}
+    \item Creates and implements a set of progras needed for the software
+    \item Programs are created based on the agreed architecture and design by the team.
+    \item Creates strategies in the implementation of solutions at different levels of system abstraction and technology used.
+    \item Also known as \emph{Software Developer}, \emph{Programmer}, etc.
+  \end{itemize}
+
+  \subsection*{Designer}
+  \begin{itemize}
+    \item Responsible for the look and feel of the application based on the team feedback
+    \item Create mockups for review by the team
+  \end{itemize}
+
+  \subsection*{Tester}
+  \begin{itemize}
+    \item Ensures that the application/software behaves properly on a combination of input and scenarios.
+    \item Provides test cases to mimic realistic usage of the software.
+    \item Provides comments for improvements
+  \end{itemize}
+
+  Sometimes, you would hear some of these terms:
+  \begin{description}
+    \item[Full Stack Developer] is knowledgeable in various levels of implementation (i.e. business logic, sever, network, interface).
+    \item[UX Designer] is responsible for enhancing user experience and satisfaction through improved usability, aesthetics, accessibility, and performace of a piece of software.
+    \item[Subject Matter Expert (SME)] is a person with in-depth knowledge from both a business and IT perspective that when shared with others, significantly enhances performance within the organization.
+  \end{description}
+
+\end{document}
